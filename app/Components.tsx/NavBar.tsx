@@ -16,13 +16,13 @@ export default function NavBar() {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-6">
-                    <Link href="/" className="hover:text-[#15FB89] transition">Home</Link>
-                    <Link href="/about" className="hover:text-[#15FB89] transition">About</Link>
-                    <Link href="/contact" className="hover:text-[#15FB89] transition">Contact</Link>
+                    <Link href="/" className="hover:text-[#15FB89] text-2xl font-semibold transition">Home</Link>
+                    <Link href="/about" className="hover:text-[#15FB89] text-2xl font-semibold transition">About</Link>
+                    <Link href="/contact" className="hover:text-[#15FB89] text-2xl font-semibold transition">Contact</Link>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+                <button className="md:hidden text-2xl" onClick={() => setIsOpen(!isOpen)}>
                     ☰
                 </button>
             </div>
@@ -30,9 +30,9 @@ export default function NavBar() {
             {/* Mobile Menu */}
             {isOpen && (
                 <div className="md:hidden bg-[#012745] text-center py-4">
-                    <Link href="/" className="block py-2 hover:text-[#15FB89]" onClick={() => setIsOpen(false)}>Home</Link>
-                    <Link href="/about" className="block py-2 hover:text-[#15FB89]" onClick={() => setIsOpen(false)}>About</Link>
-                    <Link href="/contact" className="block py-2 hover:text-[#15FB89]" onClick={() => setIsOpen(false)}>Contact</Link>
+                    <Link href="/" className="block py-2 text-2xl font-semibold hover:text-[#15FB89]" onClick={() => setIsOpen(false)}>Home</Link>
+                    <Link href="/about" className="block py-2 text-2xl font-semibold hover:text-[#15FB89]" onClick={() => setIsOpen(false)}>About</Link>
+                    <Link href="/contact" className="block py-2 text-2xl font-semibold hover:text-[#15FB89]" onClick={() => setIsOpen(false)}>Contact</Link>
                 </div>
             )}
         </nav>
